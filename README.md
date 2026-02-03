@@ -39,5 +39,8 @@
 
 <br/>
 
-<img src="assets/메인.png" alt="프로젝트 배너" width="100%"/>
+<img src="assets/hdex메인.png" alt="프로젝트 배너" width="100%"/>
+<img src="assets/hdex마이페이지.png" alt="프로젝트 배너" width="100%"/>
+<img src="assets/hdex주문내역.png" alt="프로젝트 배너" width="100%"/>
+<img src="assets/hdex리뷰목록.png" alt="프로젝트 배너" width="100%"/>
 
