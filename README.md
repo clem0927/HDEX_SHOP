@@ -15,15 +15,12 @@
 
 ## 🎬 Project Preview & Documents
 <div align="center">
-  <img src="assets/메인.png" alt="프로젝트 배너" width="100%"/>
-  <br/><br/>
-  
   <table>
     <tr>
-      <td align="center"><b>📊 최종 PPT</b></td>
+      <td align="center"><b>📊디자인 최종 PPT</b></td>
     </tr>
     <tr>
-      <td align="center"><br/><a href="assets/솔데스크HR_김민영 PPT.pptx">📁 다운로드 (PPTX)</a></td>
+      <td align="center"><br/><a href="assets/HDEX 최종 보고서.pptx">📁 다운로드 (PPTX)</a></td>
     </tr>
   </table>
 
@@ -44,3 +41,4 @@
 <img src="assets/hdex주문내역.png" alt="프로젝트 배너" width="100%"/>
 <img src="assets/hdex리뷰목록.png" alt="프로젝트 배너" width="100%"/>
 
+## 자세한 내용은 PPT 참고!
