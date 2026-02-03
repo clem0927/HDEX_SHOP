@@ -1,0 +1,511 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.sign{
+  margin:0;
+  padding:0;
+  padding-left: auto;
+  height: 3vh;
+  line-height: 3vh;
+}
+.inner-sign{
+  margin:0;
+  padding:0;
+  display: flex;
+  float:right;
+  margin-right: 3%;
+  height: 3vh;
+  line-height: 3vh;
+  
+}
+.signbtn{
+  border:none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.navbar {
+  width:100%;
+  height: 6vh;
+  line-height: 6vh;
+  display: flex;
+  position: relative;
+  list-style-type: none;
+  padding:0;
+  background-color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:black;
+}
+a :hover{
+  font-weight:bold;
+  color:#ff6347;
+}
+ul li{
+  background-color: white;
+  font-size:2vh;
+}
+.left{
+  margin-right:auto;
+  font-family: Jaro, sans-serif;
+  line-height: 6vh; 
+  font-size:4.5vh;
+  width:15vw;
+  margin-left:3vw;
+}
+.left:hover {
+  font-size: 5vh;
+  color:#ff6347;
+}
+.right1{
+  margin-left:auto;
+}
+.navbar li a {
+  text-decoration: none;
+  display:block;
+  color: #333;
+  text-align: center;
+  padding-right: 30px;
+}
+/*submenu1*/
+.navbar:hover .submenu1 {
+  display: block; /* 부모 요소에 마우스를 올리면 서브메뉴 표시 */
+}
+.right .inner-div2 {
+  position: relative;
+  height: 6vh;
+  line-height: 6vh;
+}
+.inner-div2 img{
+  width:3vh;
+  height: 3vh;
+  padding-top:50%;
+}
+.right .inner-div2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4vh; /* 투명한 원의 지름 설정 */
+  height: 4vh; /* 투명한 원의 지름 설정 */
+  border-radius: 50%; /* 원 모양으로 만들기 */
+  background-color: rgba(128, 128, 128, 0.5); /* 투명한 회색으로 설정 */
+  opacity: 0; /* 처음에는 투명하게 설정 */
+  transition: opacity 0.3s ease; /* 부드러운 페이드 인/아웃 효과를 위한 트랜지션 추가 */
+}
+.right .inner-div2:hover::after {
+  opacity: 1; /* 마우스를 올렸을 때 투명도 조정 */
+}  
+
+/*서브메뉴*/
+.submenu-all a:hover{
+  font-weight: bold;
+  border-bottom:2px solid black;
+}
+.submenu-all a{
+  text-decoration: none;
+  color:black;
+}
+.submenu-all img{
+  padding-top:10%;
+  width:70%;
+  height:80%;
+}
+
+.submenu1 {
+  background-color: white;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease;
+  position: absolute;
+  top: 100%; /* 부모 요소의 하단에 위치하도록 함 */
+  left: 0;
+  z-index: 999; /* 메인 내용 위에 위치하도록 함 */
+  width: 100vw; /* 화면 가로폭 전체로 설정 */
+  display: none; 
+  
+}
+.submenu-area {
+  margin:0;
+  padding:0;
+  display:flex;
+  position:absolute;
+  width: 50%;
+  height: 30vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -50%); /* 수평, 수직 중앙 정렬 */
+}
+.submenu-text1 {
+  background-color: white;
+  width:33.333333%;
+  text-align: right;
+}
+
+.submenu-text2 {
+  background-color: white;
+  width:33.33333%;
+}
+.submenu-text3 {
+  background-color: white;
+  width:33.3333333%;
+}
+/*submenu1*/
+/*submenu2*/
+.navbar:hover .submenu2 {
+  display: block; /* 부모 요소에 마우스를 올리면 서브메뉴 표시 */
+}  
+.submenu2 {
+  background-color: white;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease;
+  position: absolute;
+  top: 100%; /* 부모 요소의 하단에 위치하도록 함 */
+  left: 0;
+  z-index: 999; /* 메인 내용 위에 위치하도록 함 */
+  width: 100vw; /* 화면 가로폭 전체로 설정 */
+  display: none; 
+}
+.submenu2-area {
+  margin:0;
+  padding:0;
+  background-color: white;
+  display:flex;
+  position:absolute;
+  width: 50%;
+  height: 30vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -50%); /* 수평, 수직 중앙 정렬 */
+  
+}
+.submenu2-text1 {
+  background-color: white;
+  width:33.333333%;
+  text-align: right;
+}
+.submenu2-text2 {
+  background-color: white;
+  width:33.33333%;
+}
+.submenu2-text3 {
+  background-color: white;
+  width:33.3333333%;
+}
+/*submenu2*/
+/*submenu3*/
+.navbar:hover .submenu3 {
+  display: block; /* 부모 요소에 마우스를 올리면 서브메뉴 표시 */
+}  
+.submenu3 {
+  background-color: white;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease;
+  position: absolute;
+  top: 100%; /* 부모 요소의 하단에 위치하도록 함 */
+  left: 0;
+  z-index: 999; /* 메인 내용 위에 위치하도록 함 */
+  width: 100vw; /* 화면 가로폭 전체로 설정 */
+  display: none; 
+}
+.submenu3-area {
+  margin:0;
+  padding:0;
+  background-color: white;
+  display:flex;
+  position:absolute;
+  width: 50%;
+  height: 30vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -50%); /* 수평, 수직 중앙 정렬 */
+  
+}
+.submenu3-text1 {
+  background-color: white;
+  width:33.333333%;
+  text-align: right;
+}
+.submenu3-text2 {
+  background-color: white;
+  width:33.33333%;
+}
+.submenu3-text3 {
+  background-color: white;
+  width:33.3333333%;
+}
+/*submenu3*/
+/*submenu4*/
+.navbar:hover .submenu4 {
+  display: block; /* 부모 요소에 마우스를 올리면 서브메뉴 표시 */
+}
+
+.submenu4 {
+  background-color: white;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease;
+  position: absolute;
+  top: 100%; /* 부모 요소의 하단에 위치하도록 함 */
+  left: 0;
+  z-index: 999; /* 메인 내용 위에 위치하도록 함 */
+  width: 100vw; /* 화면 가로폭 전체로 설정 */
+  display: none; 
+}
+.submenu4-area {
+  margin:0;
+  padding:0;
+  background-color: white;
+  display:flex;
+  position:absolute;
+  width: 50%;
+  height: 30vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -50%); /* 수평, 수직 중앙 정렬 */
+}
+.submenu4-text1 {
+  background-color: white;
+  width:33.333333%;
+  text-align: right;
+}
+.submenu4-text2 {
+  background-color: white;
+  width:33.33333%;
+}
+.submenu4-text3 {
+  background-color: white;
+  width:33.3333333%;
+}
+/*submenu4*/
+/*submenu5*/
+.navbar:hover .submenu5 {
+  display: block; /* 부모 요소에 마우스를 올리면 서브메뉴 표시 */
+}
+.submenu5 {
+  background-color: white;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease;
+  position: absolute;
+  top: 100%; /* 부모 요소의 하단에 위치하도록 함 */
+  left: 0;
+  z-index: 999; /* 메인 내용 위에 위치하도록 함 */
+  width: 100vw; /* 화면 가로폭 전체로 설정 */
+  display: none; 
+}
+.submenu5-area {
+  margin:0;
+  padding:0;
+  background-color: white;
+  display:flex;
+  position:absolute;
+  width: 50%;
+  height: 30vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -50%); /* 수평, 수직 중앙 정렬 */
+}
+.submenu5-text1 {
+  background-color: white;
+  width:33.333333%;
+  text-align: right;
+}
+.submenu5-text2 {
+  background-color: white;
+  width:33.33333%;
+}
+.submenu5-text3 {
+  background-color: white;
+  width:33.3333333%;
+}
+/*submenu5*/
+.submenu-textzone {
+  height: 30vh;
+  padding-top:10%;
+}
+.banner {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.banner video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+.banner-content {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+}
+.banner-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.control-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.control-buttons button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #eaeaea;
+}
+.content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+.product-carousel {
+  margin-bottom: 10000px; /* 프로덕트 윈도우와 스크롤 컨테이너 사이의 아래쪽 마진을 크게 조정 */
+}
+.scroll-container {
+display: flex;       /* flexbox를 사용하여 요소들을 행으로 정렬 */
+overflow-x: auto;    /* 필요할 때 수평 스크롤바를 표시 */
+white-space: nowrap; /* 모든 이미지를 한 줄로 처리 */
+}
+
+.scroll-container img {
+  width: 40%; /* 이미지의 너비를 20%에서 40%로 늘립니다. */
+  height: auto; /* 이미지의 높이를 자동으로 조절하여 비율 유지 */
+  display: inline-block; /* 이미지를 인라인 블록 요소로 설정 */
+  vertical-align: middle; /* 수직 정렬 */
+  margin-right: 10px; /* 이미지 사이의 간격을 추가 */
+}
+
+  .control-buttons button {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+  }
+  .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 20px;
+      background-color: #eaeaea;
+  }
+  .content h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+  }
+  .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+  }
+  .product-carousel {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      margin: 20px 0;
+  }
+  .product-window {
+width: 100%; /* 뷰포트의 너비 */
+overflow: hidden;
+}
+  .product-list {
+display: flex;
+flex-wrap: nowrap;
+transition: transform 0.5s ease;
+min-width: 100%;
+}
+.product-list img {
+width: 20%; /* 전체 너비의 20%, 따라서 다섯 개의 이미지가 한 뷰에서 보임 */
+flex-shrink: 0;.product-list img {
+width: 20%; /* 전체 너비의 20%, 따라서 다섯 개의 이미지가 한 뷰에서 보임 */
+flex-shrink: 0;
+  }
+}
+.prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 10px 20px;
+      cursor: pointer;
+      z-index: 1000;
+}
+.prev {
+    left: 10px;
+}
+  .next {
+    right: 10px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5); /* 배경을 어둡게 */
+}
+
+/* 모달 내용 */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 35%;
+  height: auto;
+}
+
+/* 모달 창 닫기 버튼 */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-content ul{
+  padding:0;
+  margin:0;
+  display:flex;
+  list-style:none;
+}
